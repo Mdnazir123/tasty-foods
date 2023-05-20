@@ -1,0 +1,87 @@
+th {
+  text-align: center;
+}
+
+.cart__img-box {
+  width: 80px;
+}
+
+.cart__img-box img {
+  width: 100%;
+}
+
+.cart__item-del i {
+  cursor: pointer;
+}
+
+.cart__page-btn {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 2rem 0;
+}
+
+.cart__page-btn button a:hover {
+  color: #fff;
+}
+
+.cart__subtotal {
+  color: #df2020;
+  font-size: 1.5rem;
+}
+
+.addTOCart__btn {
+  border: none;
+  padding: 7px 25px;
+  background: #df2020;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+
+table thead,
+table tbody,
+table tfoot,
+table tr,
+table td,
+table th {
+  border: 1px solid #000;
+}
+
+table th {
+  text-align: center;
+}
+
+.cart__item-list .increase__decrease-btn {
+  width: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  th,
+  td {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .cart {
+    width: 100% !important;
+  }
+
+  .cart__page-btn {
+    flex-wrap: wrap;
+  }
+
+  .addTOCart__btn {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+
+}
+
+@media(max-width:359px) {
+  .table> :not(caption)>*>* {
+    padding: 0.5rem 0.3rem !important;
+  }
+}

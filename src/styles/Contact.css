@@ -1,0 +1,223 @@
+.contactpage ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    flex: 1 1 100%;
+    order: -1;
+    margin-bottom: 35px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-gap: 30px;
+}
+
+.contactpage ul>li {
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    padding: 25px;
+    transition: all 0.3s linear;
+}
+
+.contactpage ul>li .dt-contact-icon-image>i {
+    background: #010101;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-phone:before {
+    content: "\f095";
+}
+
+.contactpage ul>li .dt-contact-icon-content h4 {
+    color: #010101;
+    margin-top: 25px;
+    transition: all 0.3s linear;
+    letter-spacing: .5px;
+    text-transform: none;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.contactpage ul>li .dt-contact-icon-content p {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.contactpage ul>li:hover {
+    border: 1px solid #e7272d;
+}
+
+.contactpage ul>li:hover .dt-contact-icon-content h4 {
+    color: #e7272d;
+}
+
+.contactpage ul>li:hover .dt-contact-icon-image>i {
+    background: #e7272d;
+    color: #ffffff;
+    transition: all 0.3s linear;
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+}
+
+.fa-location-arrow:before {
+    content: "\f124";
+}
+
+.contactpage ul>li .dt-contact-icon-content p a:hover {
+    outline: 0;
+    color: #e7272d;
+}
+
+.contactpage ul>li svg {
+    vertical-align: inherit;
+}
+
+.contactget {
+    color: #f9db06;
+    background: currentcolor;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-bottom: 250px;
+}
+
+.contactget h2.main-heading {
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    letter-spacing: .5px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #010101;
+}
+
+.contactget p.heading-description {
+    padding-top: 30px;
+    margin: 0;
+    color: #010101;
+    font-weight: 600;
+    font-size: 18px;
+    padding-right: 100px;
+}
+
+.contactget .newsletter-form {
+    float: right;
+    width: 55%;
+    position: absolute;
+    right: 0;
+}
+
+.contactget .newsletter-form form.contact-form {
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactget .newsletter-form form.contact-form .hs-form-field {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contactget .newsletter-form form.contact-form label {
+    display: block;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.contactget .newsletter-form form.contact-form .hs-input {
+    width: 100%;
+    font-size: 18px;
+    line-height: normal;
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: 0;
+    display: block;
+    border: 1px solid #e4e4e4;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.contactget .newsletter-form form.contact-form .hs-textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #e4e4e4;
+    outline: none;
+    font-size: 18px;
+    line-height: normal;
+    padding: 10px 20px;
+}
+
+
+.contactget .newsletter-form button.btn {
+    border: none;
+    padding: 7px 25px;
+    background: #df2020;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 25px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contactget .newsletter-form button.btn:focus {
+    outline: none;
+}
+
+.contactget .newsletter-form button.btn:hover {
+    background-color: #010101;
+    color: #fff;
+}
+
+@media(max-width:991) {
+    .contactpage ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:767px) {
+    .contactpage ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contactget .newsletter-form {
+        width: 100%;
+    }
+
+    .contactget {
+        margin-bottom: 430px;
+    }
+
+    .contactget .newsletter-form {
+        margin-top: 20px;
+    }
+
+    .contactget p.heading-description {
+        padding-right: 0px;
+    }
+}
